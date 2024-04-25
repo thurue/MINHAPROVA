@@ -9,33 +9,19 @@ public class SimuladorbbbGUI extends JFrame {
     public SimuladorbbbGUI() {
         super("Simulador BBB");
         participantes = new ArrayList<>();
-        participantes.add(new Jogador("Alane Dias"));
-        participantes.add(new Jogador("Beatriz Reis"));
-        participantes.add(new Jogador("Davi Brito"));
-        participantes.add(new Jogador("Fernanda Bande"));
-        participantes.add(new Jogador("Giovanna Lima"));
-        participantes.add(new Jogador("Giovanna Pitel"));
-        participantes.add(new Jogador("Isabelle Nogueira"));
-        participantes.add(new Jogador("Juninho"));
-        participantes.add(new Jogador("Leidy Elin"));
-        participantes.add(new Jogador("Lucas Henrique"));
-        participantes.add(new Jogador("Lucas Luigi"));
-        participantes.add(new Jogador("Lucas Pizane"));
-        participantes.add(new Jogador("Marcus Vinicius"));
-        participantes.add(new Jogador("Matteus Amaral"));
-        participantes.add(new Jogador("Maycon Cosmer"));
-        participantes.add(new Jogador("MC Bin Laden"));
-        participantes.add(new Jogador("Michel Nogueira"));
-        participantes.add(new Jogador("Nizam"));
-        participantes.add(new Jogador("Raquele Cardozo"));
-        participantes.add(new Jogador("Rodriguinho"));
-        participantes.add(new Jogador("Thalyta Alves"));
-        participantes.add(new Jogador("Juninho"));
-        participantes.add(new Jogador("Vanessa Lopes"));
-        participantes.add(new Jogador("Vinicius Rodrigues"));
-        participantes.add(new Jogador("Wanessa Camargo"));
-        participantes.add(new Jogador("Yasmin Brunet"));
-
+        
+        String[] participantesArray = {"Alane Dias", "Beatriz Reis", "Davi Brito", "Fernanda Bande", "Alane Dias",
+                "Beatriz Reis", "Davi Brito", "Fernanda Bande", "Giovanna Lima", "Giovanna Pitel",
+                "Isabelle Nogueira", "Juninho", "Leidy Elin", "Lucas Henrique", "Lucas Luigi", "Lucas Pizane",
+                "Marcus Vinicius", "Matteus Amaral", "Maycon Cosmer", "MC Bin Laden", "Michel Nogueira", "Nizam",
+                "Raquele Cardozo", "Rodriguinho", "Thalyta Alves", "Juninho", "Vanessa Lopes", "Vinicius Rodrigues",
+                "Wanessa Camargo", "Yasmin Brunet"};
+            
+   for (String participante : participantesLista) {
+            participantes.add(new Jogador(participante));
+        }
+    for (Jogador jogador : participantes) {
+            System.out.println(jogador.getNome());   }     
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 800);
